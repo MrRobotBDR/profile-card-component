@@ -1,0 +1,132 @@
+:root {
+	/* ### Primary */
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+	/* ### Neutral */
+	--Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.top-bg {
+	position: absolute;
+	background: url("images/bg-pattern-top.svg");
+	background-size: contain;
+	background-repeat: none;
+	height: 978px;
+	width: 978px;
+	top: -528px;
+	left: -250px;
+}
+
+.bottom-bg {
+	position: absolute;
+	background: url("images/bg-pattern-bottom.svg");
+	background-size: contain;
+	background-repeat: none;
+	height: 978px;
+	width: 978px;
+	bottom: -528px;
+	right: -250px;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	background-color: var(--Dark-cyan);
+	color: var(--Very-dark-desaturated-blue);
+	overflow: hidden;
+	position: relative;
+}
+
+.card {
+	font-family: "Kumbh Sans", sans-serif;
+	max-width: 25rem;
+	padding-bottom: 2.4rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: rgb(250, 250, 250);
+	border-radius: 20px;
+	height: 376px;
+	width: 350px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.bg-image {
+	position: absolute;
+	border-radius: 20px 20px 0 0;
+	overflow: hidden;
+}
+
+.top-flex-container {
+	margin-top: 86px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.top-text p {
+	color: var(--Dark-gray);
+}
+
+.avatar {
+	border-radius: 50%;
+	border: 5px solid #fff;
+	z-index: 1;
+}
+
+.header-text {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.name-heading {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.header-text span {
+	font-size: 18px;
+
+	color: var(--Dark-gray);
+}
+
+.bottom-flex-container {
+	border-top: 6px solid var();
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.followers,
+.likes,
+.photos {
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bottom-flex-container p {
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-top: 3px;
+	color: var(--Dark-gray);
+}
