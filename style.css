@@ -108,7 +108,7 @@
 }
 
 .bottom-flex-container {
-	border-top: 6px solid var();
+	border-top: 1px solid var(--Dark-gray);
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
